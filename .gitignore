@@ -1,0 +1,16 @@
+# Dependency directory
+node_modules
+
+# Users Environment Variables
+.lock-wscript
+.env
+
+# logs
+*.log
+
+# coverage
+coverage
+.nyc_output
+
+# typescript output
+/lib
