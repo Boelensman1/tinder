@@ -50,7 +50,7 @@ export default class Tinder {
   /**
    * get recommendations
    */
-  public getRecs(): Promise<Suggestion[]> {
+  public getSuggestions(): Promise<Suggestion[]> {
     if (!this.authToken) { throw new Error('Authenticate first!'); }
 
     return this.client.get('/user/recs').then((result) => {

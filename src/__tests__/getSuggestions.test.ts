@@ -8,7 +8,7 @@ beforeAll(() => (
 ));
 
 it('gets recommentations', () => (
-  tinder.getRecs().then((result) => {
+  tinder.getSuggestions().then((result) => {
     const util = require('util');
     console.log(util.inspect(result, false, null));
 
