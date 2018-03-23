@@ -41,9 +41,16 @@ export default class TinderClient {
       facebook_id: facebookId,
     }).then((response) => (response.data.user.api_token)).then((token) => {
       this.authToken = token;
-      const newConfig = { ...clientConfig };
-      newConfig.headers['X-Auth-Token'] = token;
-      this.client = axios.create(newConfig);
+
+      // add x-auth token to the client settings
+      this.client = axios.create({
+        ...clientConfig,
+        headers: {
+          ...clientConfig.headers,
+          'X-Auth-Token': this.authToken,
+        },
+      });
+
       return true;
     });
   }
