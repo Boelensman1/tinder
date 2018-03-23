@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-import { Suggestion } from './interfaces';
+import { Suggestion, Photo } from './interfaces';
 
 const clientConfig = {
   baseURL: 'https://api.gotinder.com',
@@ -60,5 +60,21 @@ export default class Tinder {
       }
       return result.data.results;
     });
+  }
+
+  /**
+   * Get photo
+   */
+  public getPhoto(photo: Photo): Promise<any> {
+    if (!this.authToken) { throw new Error('Authenticate first!'); }
+
+    return this.getPhotoStream(photo.url);
+  }
+
+  /**
+   * Get photo stream
+   */
+  private getPhotoStream(url: string): Promise<any> {
+    return this.client.get(url, { baseURL: null, responseType: 'stream' });
   }
 }
