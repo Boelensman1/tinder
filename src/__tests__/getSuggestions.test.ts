@@ -1,19 +1,21 @@
 import * as nock from 'nock';
 
-import Tinder from '..'; // tslint:disable-line import-name
+import TinderClient from '..'; // tslint:disable-line import-name
 import { token, id } from './util/getAuth';
 
 nock.load('./src/__tests__/mocks/auth.json');
 nock.load('./src/__tests__/mocks/getSuggestions.json');
 
-const tinder = new Tinder();
+const tinderClient = new TinderClient();
 
 beforeAll(() => (
-  tinder.auth(token, id)
+  tinderClient.auth(token, id)
 ));
 
-it('gets recommentations', () => (
-  tinder.getSuggestions().then((result) => {
-    expect(result).toBeDefined();
-  })
-));
+it('gets recommentations', async () => {
+  const suggestions = await tinderClient.getSuggestions();
+  expect(suggestions).toBeDefined();
+  expect(suggestions[0].birthDate).toBeInstanceOf(Date);
+
+  expect(suggestions).toMatchSnapshot();
+});

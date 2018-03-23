@@ -1,6 +1,7 @@
 const axios = require('axios');
 
-import { Suggestion, Photo } from './interfaces';
+import { Photo } from './interfaces';
+import { Suggestion } from './classes';
 
 const clientConfig = {
   baseURL: 'https://api.gotinder.com',
@@ -17,7 +18,7 @@ const clientConfig = {
 /**
  * The main class containing all the functions
  */
-export default class Tinder {
+export default class TinderClient {
   /**
    * Handle to the axios client
    */
@@ -58,7 +59,7 @@ export default class Tinder {
         console.log(result);
         throw new Error('Error while getting results');
       }
-      return result.data.results;
+      return result.data.results.map((result) => (new Suggestion(result)));
     });
   }
 

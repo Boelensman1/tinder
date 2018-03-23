@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gets recommentations 1`] = `
+Array [
+  Suggestion {
+    "bio": "aaaaaaaaaa",
+    "birthDate": 1995-01-01T08:11:14.795Z,
+    "birthDateInfo": "fuzzy birthdate active, not displaying real birth_date",
+    "commonConnections": Array [],
+    "commonInterests": Array [],
+    "connectionCount": 0,
+    "contentHash": "c1639a04bab9114a3945f5219a88c274f6ac38de45jhqau",
+    "distanceMi": 20,
+    "groupMatched": false,
+    "id": "51d4cc502e7211e8a74c61df",
+    "instagram": undefined,
+    "isFemale": true,
+    "isTraveling": undefined,
+    "jobs": Array [
+      Object {
+        "company": Object {
+          "name": "jobname",
+        },
+        "title": Object {
+          "name": "jobtitle",
+        },
+      },
+    ],
+    "name": "Suggestion1",
+    "photos": Array [
+      Object {
+        "extension": "jpg",
+        "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+        "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+        "processedFiles": Array [
+          Object {
+            "height": 640,
+            "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/640x640_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+            "width": 640,
+          },
+          Object {
+            "height": 320,
+            "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/320x320_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+            "width": 320,
+          },
+          Object {
+            "height": 172,
+            "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/172x172_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+            "width": 172,
+          },
+          Object {
+            "height": 84,
+            "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/84x84_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+            "width": 84,
+          },
+        ],
+        "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+      },
+    ],
+    "pingTime": 2014-12-09T00:00:00.000Z,
+    "sNumber": 100000000,
+    "schools": Array [],
+    "spotifyThemeTrack": undefined,
+    "teaser": Object {
+      "string": "position",
+      "type": "jobPosition",
+    },
+    "teasers": Array [
+      Object {
+        "string": "position",
+        "type": "jobPosition",
+      },
+    ],
+  },
+  Suggestion {
+    "bio": "bbbbbbbbbb",
+    "birthDate": 1997-01-01T08:00:00.000Z,
+    "birthDateInfo": "fuzzy birthdate active, not displaying real birth_date",
+    "commonConnections": Array [],
+    "commonInterests": Array [],
+    "connectionCount": 0,
+    "contentHash": "c1639a04bab9114a3945f5219a88c274f6ac38de4",
+    "distanceMi": 50,
+    "groupMatched": false,
+    "id": "52d4cc502e7211e8a74c61df",
+    "instagram": undefined,
+    "isFemale": true,
+    "isTraveling": undefined,
+    "jobs": Array [
+      Object {
+        "company": Object {
+          "name": "name",
+        },
+      },
+    ],
+    "name": "Suggestion2",
+    "photos": Array [
+      Object {
+        "extension": "jpg",
+        "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+        "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+        "processedFiles": Array [
+          Object {
+            "height": 640,
+            "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/640x640_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+            "width": 640,
+          },
+          Object {
+            "height": 320,
+            "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/320x320_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+            "width": 320,
+          },
+          Object {
+            "height": 172,
+            "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/172x172_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+            "width": 172,
+          },
+          Object {
+            "height": 84,
+            "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/84x84_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+            "width": 84,
+          },
+        ],
+        "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+      },
+    ],
+    "pingTime": 2014-12-09T00:00:00.000Z,
+    "sNumber": 200000000,
+    "schools": Array [
+      Object {
+        "id": "111111111111111",
+        "name": "schoolname",
+      },
+    ],
+    "spotifyThemeTrack": undefined,
+    "teaser": Object {
+      "string": "positionname",
+      "type": "position",
+    },
+    "teasers": Array [
+      Object {
+        "string": "positionname",
+        "type": "position",
+      },
+      Object {
+        "string": "schoolname",
+        "type": "school",
+      },
+    ],
+  },
+]
+`;
