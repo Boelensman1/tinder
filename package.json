@@ -1,6 +1,6 @@
 {
   "name": "@boelensman1/tinderclient",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Wrapper for the tinder api",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
