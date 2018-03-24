@@ -66,7 +66,7 @@ class Photo {
     return this.tinderClient.doGetRequest(this.url, {
       baseURL: null,
       responseType: 'stream',
-    })
+    });
   }
 }
 
