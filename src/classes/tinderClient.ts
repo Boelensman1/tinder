@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { IncomingMessage } from 'http';
 
 import { Suggestion, Photo } from '../classes';
 import { UserMetaData } from '../interfaces';
@@ -89,10 +90,13 @@ class TinderClient {
   /**
    * Get photo stream
    */
-  private getPhotoStream(url: string): Promise<any> {
+  private getPhotoStream(url: string): Promise<IncomingMessage> {
     if (!this.authToken) { throw new Error('Authenticate first!'); }
 
-    return this.client.get(url, { baseURL: null, responseType: 'stream' });
+    return this.client.get(url, {
+      baseURL: null,
+      responseType: 'stream',
+    }).then((result) => (result.data));
   }
 }
 

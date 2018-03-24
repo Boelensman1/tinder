@@ -62,7 +62,7 @@ class Photo {
    * Get photo
    */
   public get(): Promise<IncomingMessage> {
-    return this.tinderClient.getPhotoStream(this.url).then((r) => (r.data));
+    return this.tinderClient.getPhotoStream(this.url);
   }
 }
 
