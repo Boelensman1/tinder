@@ -1,0 +1,361 @@
+[
+  {
+    "scope": "https://api.gotinder.com:443",
+    "method": "get",
+    "path": "/meta",
+    "body": "",
+    "status": 200,
+    "response": {
+      "status": 200,
+      "account": {},
+      "client_resources": {
+        "rate_card": {
+          "carousel": [
+            {
+              "slug": "unlimited_likes"
+            },
+            {
+              "slug": "boost"
+            },
+            {
+              "slug": "who_sees_you"
+            },
+            {
+              "slug": "your_profile"
+            },
+            {
+              "slug": "super_like"
+            },
+            {
+              "slug": "passport"
+            },
+            {
+              "slug": "undo"
+            },
+            {
+              "slug": "no_ads"
+            }
+          ]
+        },
+        "plus_screen": [
+          "unlimited_swipes",
+          "who_you_see",
+          "who_sees_you",
+          "your_profile",
+          "super_like",
+          "passport",
+          "undo",
+          "hide_ads"
+        ]
+      },
+      "notifications": [],
+      "groups": [
+        {
+          "type": "purchase",
+          "sub_type": "plus",
+          "key": "plus_subscription_1499_12m_1v",
+          "group_id": "hidden",
+          "version": 0
+        },
+        {
+          "type": "purchase",
+          "sub_type": "plus",
+          "key": "plus_subscription_1499_6m_1v",
+          "group_id": "hidden",
+          "version": 0,
+          "is_primary": true
+        },
+        {
+          "type": "purchase",
+          "sub_type": "plus",
+          "key": "plus_subscription_1499_1m_1v",
+          "group_id": "hidden",
+          "version": 0,
+          "is_base_group": true
+        }
+      ],
+      "rating": {
+        "likes_remaining": 100,
+        "super_likes": {
+          "remaining": 1,
+          "alc_remaining": 0,
+          "new_alc_remaining": 0,
+          "allotment": 1,
+          "superlike_refresh_amount": 5,
+          "superlike_refresh_interval": 1,
+          "superlike_refresh_interval_unit": "d",
+          "resets_at": null
+        }
+      },
+      "travel": {
+        "is_traveling": false
+      },
+      "purchases": [],
+      "versions": {
+        "active_text": "0.0.0",
+        "age_filter": "2.1.0",
+        "matchmaker": "2.1.0",
+        "trending": "10.0.0",
+        "trending_active_text": "10.0.0"
+      },
+      "globals": {
+        "boost_intro_multiplier": 10,
+        "invite_type": "client",
+        "recs_interval": 20000,
+        "updates_interval": 2000,
+        "recs_size": 40,
+        "matchmaker_default_message": "I want you to meet someone. I introduced you on Tinder www.gotinder.com/app",
+        "share_default_text": "<style>body{color:#fff;text-align:center;font-family:HelveticaNeue;text-shadow:0 1px 1px rgba(0,0,0,0.63);}h1{font-size:24px;line-height:24px;margin:0;}p{font-size:16px;margin:8px;}</style><h1>Get a Boost</h1><p><strong>Invite friends</strong> to show up <br/><strong>even higher</strong> in recommendations.</p>",
+        "boost_decay": 180,
+        "boost_up": 7,
+        "boost_down": 8,
+        "sparks": false,
+        "kontagent": false,
+        "sparks_enabled": false,
+        "kontagent_enabled": false,
+        "mqtt": false,
+        "tinder_sparks": true,
+        "ad_swipe_interval": 20,
+        "fetch_connections": false,
+        "rate_app": true,
+        "app_boy": true,
+        "super_like_alc_mode": 2,
+        "plus": true,
+        "super_like": true,
+        "recs_blend": false,
+        "fireboarding": true,
+        "squads_enabled": false,
+        "squads_extension_length": 86400000,
+        "squads_expiration_notice": 21600000,
+        "photo_preview_enabled": false,
+        "discount": true,
+        "boost": true,
+        "boost_duration": 1800000,
+        "fast_match": true,
+        "fast_match_preview_minimum_time": 180000,
+        "fast_match_notif_options": [
+          0,
+          1,
+          3,
+          10
+        ],
+        "fast_match_notif_default": 1,
+        "fast_match_new_count_fetch_interval": 10000,
+        "fast_match_boost_new_count_fetch_interval": 2000,
+        "fast_match_new_count_threshold": 99,
+        "fast_match_polling_mode": 1,
+        "can_edit_jobs": false,
+        "can_edit_schools": false,
+        "can_add_photos_from_facebook": true,
+        "can_show_common_connections": true,
+        "web_payments_enabled": true,
+        "card_replay": false
+      },
+      "tutorials": [
+        "super_like_action",
+        "profile_verified",
+        "boost_tutorial",
+        "welcome_screen",
+        "message_standards",
+        "reactions_announcement",
+        "reactions_tooltip",
+        "super_likeable",
+        "places_tutorial_cards",
+        "places_edit_place_tooltip",
+        "loops_new_media_selector",
+        "loops_filter_video"
+      ],
+      "products": {
+        "superlike": {
+          "regular": {
+            "skus": [
+              {
+                "product_type": "superlike",
+                "purchase_type": "consumable",
+                "product_id": "superlike_consumable_499_5",
+                "amount": 5,
+                "is_base_group": true
+              },
+              {
+                "product_type": "superlike",
+                "purchase_type": "consumable",
+                "product_id": "superlike_consumable_1999_25",
+                "amount": 25,
+                "is_primary": true
+              },
+              {
+                "product_type": "superlike",
+                "purchase_type": "consumable",
+                "product_id": "superlike_consumable_3999_60",
+                "amount": 60
+              }
+            ]
+          }
+        },
+        "boost": {
+          "regular": {
+            "skus": [
+              {
+                "product_type": "boost",
+                "purchase_type": "consumable",
+                "product_id": "boost_consumable_2499_10",
+                "amount": 10
+              },
+              {
+                "product_type": "boost",
+                "purchase_type": "consumable",
+                "product_id": "boost_consumable_1499_5",
+                "amount": 5,
+                "is_primary": true
+              },
+              {
+                "product_type": "boost",
+                "purchase_type": "consumable",
+                "product_id": "boost_consumable_399_1",
+                "amount": 1,
+                "is_base_group": true
+              }
+            ]
+          }
+        },
+        "plus": {
+          "regular": {
+            "skus": [
+              {
+                "product_type": "plus",
+                "purchase_type": "subscription",
+                "product_id": "plus_subscription_1499_12m_1v",
+                "terms": 12
+              },
+              {
+                "product_type": "plus",
+                "purchase_type": "subscription",
+                "product_id": "plus_subscription_1499_6m_1v",
+                "terms": 6,
+                "is_primary": true
+              },
+              {
+                "product_type": "plus",
+                "purchase_type": "subscription",
+                "product_id": "plus_subscription_1499_1m_1v",
+                "terms": 1,
+                "is_base_group": true
+              }
+            ]
+          }
+        },
+        "gold": {
+          "regular": {
+            "skus": [
+              {
+                "product_type": "gold",
+                "purchase_type": "subscription",
+                "product_id": "gold_subscription_1499_12m_1v",
+                "terms": 12
+              },
+              {
+                "product_type": "gold",
+                "purchase_type": "subscription",
+                "product_id": "gold_subscription_1499_6m_1v",
+                "terms": 6,
+                "is_primary": true
+              },
+              {
+                "product_type": "gold",
+                "purchase_type": "subscription",
+                "product_id": "gold_subscription_1499_1m_1v",
+                "terms": 1,
+                "is_base_group": true
+              }
+            ]
+          }
+        }
+      },
+      "user": {
+        "_id": "89ca128e81d6468ca16bb5eb",
+        "active_time": "2018-03-23T08:11:14.332Z",
+        "create_date": "2018-03-23T07:11:14.313Z",
+        "age_filter_max": 32,
+        "age_filter_min": 22,
+        "api_token": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+        "banned": false,
+        "bio": "",
+        "birth_date": "2000-01-01T00:00:00.000Z",
+        "connection_count": 100,
+        "distance_filter": 50,
+        "full_name": "AAA BBB",
+        "groups": [
+          "plus_subscription_1499"
+        ],
+        "gender": 0,
+        "gender_filter": 1,
+        "interests": [],
+        "name": "AAA",
+        "ping_time": "2018-03-23T08:11:14.332Z",
+        "discoverable": true,
+        "photos": [
+          {
+            "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+            "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+            "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+            "extension": "jpg",
+            "fbId": "111111111111111",
+            "main": true,
+            "xdistance_percent": 1,
+            "xoffset_percent": 0,
+            "ydistance_percent": 1,
+            "yoffset_percent": 0,
+            "processedFiles": [
+              {
+                "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/640x640_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/320x320_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/172x172_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+                "height": 172,
+                "width": 172
+              },
+              {
+                "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/84x84_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+                "height": 84,
+                "width": 84
+              }
+            ]
+          }
+        ],
+        "schools": [
+          {
+            "displayed": true,
+            "id": "111111111111111",
+            "name": "School",
+            "type": "College"
+          }
+        ],
+        "squads_discoverable": false,
+        "squads": [],
+        "can_create_squad": false,
+        "squad_ads_shown": false
+      }
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Sat, 24 Mar 2018 08:57:59 GMT",
+      "Vary",
+      "Accept-Encoding",
+      "Vary",
+      "X-Request-ID",
+      "a0a0aaaaa0a00ojqi0mg",
+      "Accept-Encoding",
+      "Connection",
+      "Close"
+    ]
+  }
+]

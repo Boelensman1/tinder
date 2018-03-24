@@ -70,6 +70,21 @@ class TinderClient {
   }
 
   /**
+   * Get your own meta data (swipes left, people seen, etc..)
+   */
+  public getMeta(): Promise<any> {
+    if (!this.authToken) { throw new Error('Authenticate first!'); }
+
+    return this.client.get('/meta').then((result) => {
+      if (result.data.status !== 200) {
+        console.log(result);
+        throw new Error('Error while getting results');
+      }
+      return result.data;
+    });
+  }
+
+  /**
    * Get photo stream
    */
   private getPhotoStream(url: string): Promise<any> {
