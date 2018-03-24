@@ -1,4 +1,5 @@
 import { IncomingMessage } from 'http';
+import { TinderClient } from '../classes';
 
 /**
  * The tinder photos (not instagram but the one connected to the profile)
@@ -47,7 +48,7 @@ class Photo {
    */
   public shape?: string;
 
-  constructor(private tinderClient, photodata) {
+  constructor(private tinderClient: TinderClient, photodata) {
     this.url = photodata.url;
     this.processedFiles = photodata.processedFiles;
     this.fileName = photodata.fileName;
@@ -62,7 +63,10 @@ class Photo {
    * Get photo
    */
   public get(): Promise<IncomingMessage> {
-    return this.tinderClient.getPhotoStream(this.url);
+    return this.tinderClient.doGetRequest(this.url, {
+      baseURL: null,
+      responseType: 'stream',
+    })
   }
 }
 

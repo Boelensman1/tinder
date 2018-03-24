@@ -60,14 +60,8 @@ class TinderClient {
    * get recommendations
    */
   public getSuggestions(): Promise<Suggestion[]> {
-    if (!this.authToken) { throw new Error('Authenticate first!'); }
-
-    return this.client.get('/user/recs').then((result) => {
-      if (result.data.status !== 200) {
-        console.log(result);
-        throw new Error('Error while getting results');
-      }
-      return result.data.results.map((result) => (new Suggestion(this, result)));
+    return this.doGetRequest('/user/recs').then((result) => {
+      return result.results.map((result) => (new Suggestion(this, result)));
     });
   }
 
@@ -75,28 +69,25 @@ class TinderClient {
    * Get your own meta data (swipes left, people seen, etc..)
    */
   public getMeta(): Promise<UserMetaData> {
-    if (!this.authToken) { throw new Error('Authenticate first!'); }
-
-    return this.client.get('/meta').then((result) => {
-      if (result.data.status !== 200) {
-        console.log(result);
-        throw new Error('Error while getting results');
-      }
-      delete result.data.status;
-      return result.data;
+    return this.doGetRequest('/meta').then((result) => {
+      delete result.status;
+      return result;
     });
   }
 
   /**
-   * Get photo stream
+   * Do a get request using the axios client
    */
-  private getPhotoStream(url: string): Promise<IncomingMessage> {
+  public doGetRequest(url: string, options?: object): Promise<any> {
     if (!this.authToken) { throw new Error('Authenticate first!'); }
 
-    return this.client.get(url, {
-      baseURL: null,
-      responseType: 'stream',
-    }).then((result) => (result.data));
+    return this.client.get(url, options).then((result) => {
+      if (result.data.status !== 200) {
+        console.log(result);
+        throw new Error('Error while getting results');
+      }
+      return result.data;
+    });
   }
 }
 
