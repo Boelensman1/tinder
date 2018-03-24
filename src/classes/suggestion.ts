@@ -133,21 +133,24 @@ class Suggestion {
    * Like suggestion
    */
   public async like(): Promise<boolean> {
-    return this.tinderClient.doGetRequest(`/like/${this.id}`).then(() => (true));
+    await this.tinderClient.doGetRequest(`/like/${this.id}`);
+    return true;
   }
 
   /**
    * superlike suggestion
    */
-  public superLike(): Promise<boolean> {
-    return this.tinderClient.doGetRequest(`/like/${this.id}/super`).then(() => (true));
+  public async superLike(): Promise<boolean> {
+    await this.tinderClient.doGetRequest(`/like/${this.id}/super`);
+    return true;
   }
 
   /**
    * Pass suggestion
    */
-  public pass(): Promise<boolean> {
-    return this.tinderClient.doGetRequest(`/pass/${this.id}`).then(() => (true));
+  public async pass(): Promise<boolean> {
+    await this.tinderClient.doGetRequest(`/pass/${this.id}`);
+    return true;
   }
 }
 
