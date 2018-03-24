@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 import { Suggestion, Photo } from '../classes';
+import { UserMetaData } from '../interfaces';
 
 const clientConfig = {
   baseURL: 'https://api.gotinder.com',
@@ -72,7 +73,7 @@ class TinderClient {
   /**
    * Get your own meta data (swipes left, people seen, etc..)
    */
-  public getMeta(): Promise<any> {
+  public getMeta(): Promise<UserMetaData> {
     if (!this.authToken) { throw new Error('Authenticate first!'); }
 
     return this.client.get('/meta').then((result) => {
@@ -80,6 +81,7 @@ class TinderClient {
         console.log(result);
         throw new Error('Error while getting results');
       }
+      delete result.data.status;
       return result.data;
     });
   }

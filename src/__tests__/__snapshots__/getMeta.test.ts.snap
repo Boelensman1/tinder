@@ -242,7 +242,6 @@ Object {
       "superlike_refresh_interval_unit": "d",
     },
   },
-  "status": 200,
   "travel": Object {
     "is_traveling": false,
   },

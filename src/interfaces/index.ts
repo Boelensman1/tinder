@@ -4,3 +4,6 @@ export { Job } from './job';
 export { School } from './school';
 export { Teaser } from './teaser';
 export { SpotifyThemeTrack } from './spotifyThemeTrack';
+export { Interest } from './interest';
+export { User } from './user';
+export { UserMetaData } from './userMetaData';
