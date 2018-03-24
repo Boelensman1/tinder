@@ -1,6 +1,6 @@
 {
   "name": "tinderclient",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wrapper for the tinder api",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
@@ -11,6 +11,10 @@
     "lint": "tslint './src/**/*.ts' --project tsconfig.json --type-check",
     "clean": "rimraf lib",
     "prepare": "npm run lint && npm run clean && npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boelensman1/tinderclient.git"
   },
   "author": "Wigger Boelens <me@wiggerboelens.com> (http://wiggerboelens.com/)",
   "license": "MIT",
