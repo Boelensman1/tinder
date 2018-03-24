@@ -1,5 +1,5 @@
 {
-  "name": "tinderclient",
+  "name": "@boelensman1/tinderclient",
   "version": "0.0.2",
   "description": "Wrapper for the tinder api",
   "main": "lib/index.js",
