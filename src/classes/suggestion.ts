@@ -128,6 +128,27 @@ class Suggestion {
     this.spotifyThemeTrack = input.spotify_theme_track;
     this.isTraveling = input.is_traveling;
   }
+
+  /**
+   * Like suggestion
+   */
+  public async like(): Promise<boolean> {
+    return this.tinderClient.doGetRequest(`/like/${this.id}`).then(() => (true));
+  }
+
+  /**
+   * superlike suggestion
+   */
+  public superLike(): Promise<boolean> {
+    return this.tinderClient.doGetRequest(`/like/${this.id}/super`).then(() => (true));
+  }
+
+  /**
+   * Pass suggestion
+   */
+  public pass(): Promise<boolean> {
+    return this.tinderClient.doGetRequest(`/pass/${this.id}`).then(() => (true));
+  }
 }
 
 export { Suggestion };
