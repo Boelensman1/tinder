@@ -1,11 +1,12 @@
 import {
-  Photo,
   Instagram,
   Job,
   School,
   Teaser,
   SpotifyThemeTrack,
 } from '../interfaces';
+
+import { Photo, TinderClient } from '../classes';
 
 /**
  * The suggestions that tinder gives you (the ones you'd swipe on in the app)
@@ -101,7 +102,8 @@ class Suggestion {
    */
   isTraveling: boolean;
 
-  constructor(input) {
+  constructor(private tinderClient: TinderClient, input) {
+
     // transform the output of the tinder api to something more sensible
     this.id = input._id;
     this.groupMatched = input.group_matched;
@@ -114,7 +116,7 @@ class Suggestion {
     this.birthDate = new Date(input.birth_date);
     this.name = input.name;
     this.pingTime = new Date(input.ping_time);
-    this.photos = input.photos;
+    this.photos = input.photos.map((input) => (new Photo(tinderClient, input)));
     this.jobs = input.jobs;
     this.schools = input.schools;
     this.teaser = input.teaser;

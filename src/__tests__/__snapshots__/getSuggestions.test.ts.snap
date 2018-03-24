@@ -28,10 +28,9 @@ Array [
     ],
     "name": "Suggestion1",
     "photos": Array [
-      Object {
+      Photo {
         "extension": "jpg",
         "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
-        "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
         "processedFiles": Array [
           Object {
             "height": 640,
@@ -54,6 +53,10 @@ Array [
             "width": 84,
           },
         ],
+        "tinderClient": TinderClient {
+          "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+          "client": [Function],
+        },
         "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
       },
     ],
@@ -71,6 +74,10 @@ Array [
         "type": "jobPosition",
       },
     ],
+    "tinderClient": TinderClient {
+      "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+      "client": [Function],
+    },
   },
   Suggestion {
     "bio": "bbbbbbbbbb",
@@ -95,10 +102,9 @@ Array [
     ],
     "name": "Suggestion2",
     "photos": Array [
-      Object {
+      Photo {
         "extension": "jpg",
         "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
-        "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
         "processedFiles": Array [
           Object {
             "height": 640,
@@ -121,6 +127,10 @@ Array [
             "width": 84,
           },
         ],
+        "tinderClient": TinderClient {
+          "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+          "client": [Function],
+        },
         "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
       },
     ],
@@ -147,6 +157,10 @@ Array [
         "type": "school",
       },
     ],
+    "tinderClient": TinderClient {
+      "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+      "client": [Function],
+    },
   },
 ]
 `;
