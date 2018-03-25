@@ -54,8 +54,10 @@ Array [
           },
         ],
         "tinderClient": TinderClient {
-          "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
-          "client": [Function],
+          "http": HttpClient {
+            "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+            "axiosClient": [Function],
+          },
         },
         "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
       },
@@ -75,8 +77,10 @@ Array [
       },
     ],
     "tinderClient": TinderClient {
-      "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
-      "client": [Function],
+      "http": HttpClient {
+        "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+        "axiosClient": [Function],
+      },
     },
   },
   Suggestion {
@@ -128,8 +132,10 @@ Array [
           },
         ],
         "tinderClient": TinderClient {
-          "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
-          "client": [Function],
+          "http": HttpClient {
+            "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+            "axiosClient": [Function],
+          },
         },
         "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
       },
@@ -158,8 +164,10 @@ Array [
       },
     ],
     "tinderClient": TinderClient {
-      "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
-      "client": [Function],
+      "http": HttpClient {
+        "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+        "axiosClient": [Function],
+      },
     },
   },
 ]

@@ -134,7 +134,7 @@ class Suggestion {
    * Like suggestion
    */
   public async like(): Promise<{isMatch: boolean; likesRemaining: number}> {
-    const match = await this.tinderClient.doGetRequest(`/like/${this.id}`, false);
+    const match = await this.tinderClient.http.doGetRequest(`/like/${this.id}`, false);
     return { isMatch: match.match, likesRemaining: match.likes_remaining };
   }
 
@@ -142,7 +142,7 @@ class Suggestion {
    * superlike suggestion
    */
   public async superLike(): Promise<{isMatch: boolean; superLikes: SuperLikes}> {
-    const match = await this.tinderClient.doPostRequest(`/like/${this.id}/super`);
+    const match = await this.tinderClient.http.doPostRequest(`/like/${this.id}/super`);
     return { isMatch: match.match, superLikes: match.super_likes };
   }
 
@@ -150,7 +150,7 @@ class Suggestion {
    * Pass suggestion
    */
   public async pass(): Promise<true> {
-    await this.tinderClient.doGetRequest(`/pass/${this.id}`);
+    await this.tinderClient.http.doGetRequest(`/pass/${this.id}`);
     return true;
   }
 }
