@@ -141,7 +141,7 @@ class Suggestion {
   /**
    * superlike suggestion
    */
-  public async superLike(): Promise<{isMatch: boolean; superLikes: SuperLikes}> {
+  public async superLike(): Promise<{isMatch:boolean; superLikes:SuperLikes}> {
     const match = await this.tinderClient.http.post(`/like/${this.id}/super`);
     return { isMatch: match.match, superLikes: match.super_likes };
   }

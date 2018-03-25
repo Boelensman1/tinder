@@ -57,7 +57,11 @@ class HttpClient {
   /**
    * Do a get request using the axios axiosClient
    */
-  public async get(url: string, checkStatus = true, options?: object): Promise<any> {
+  public async get(
+    url: string,
+    checkStatus = true,
+    options?: object,
+  ): Promise<any> {
     if (!this.authToken) { throw new Error('Authenticate first!'); }
 
     const result = await this.axiosClient.get(url, options);

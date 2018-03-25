@@ -103,7 +103,7 @@ export interface UserMetaData {
   notifications: any[]; // TODO: figure out the format of this
   groups: Group[];
   rating: Rating;
-  travel: { is_traveling: boolean }; // probably some extra props when you are traveling
+  travel: { is_traveling: boolean }; // prob. some extra props when traveling
   purchases: any[]; // TODO: figure out the format of this
   versions: Version[];
   globals: Global;

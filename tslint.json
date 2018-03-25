@@ -5,6 +5,7 @@
   "rules": {
     "completed-docs": true,
     "jsdoc-format": true,
+    "max-line-length": [true, 80],
     "ter-arrow-parens": [true, "always"]
   }
 }
