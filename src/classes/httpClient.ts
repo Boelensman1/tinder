@@ -1,6 +1,4 @@
 import axios from 'axios';
-import { IncomingMessage } from 'http';
-
 
 const clientConfig = {
   baseURL: 'https://api.gotinder.com',
@@ -42,7 +40,7 @@ class HttpClient {
 
     this.authToken = result.data.user.api_token;
 
-    // add x-auth token to the axiosClient settings
+    // add x-auth token to the axios client settings
     this.axiosClient = axios.create({
       ...clientConfig,
       headers: {
@@ -55,7 +53,7 @@ class HttpClient {
   }
 
   /**
-   * Do a get request using the axios axiosClient
+   * Do a get request using the axios client
    */
   public async get(
     url: string,
@@ -73,7 +71,7 @@ class HttpClient {
   }
 
   /**
-   * Do a get request using the axios axiosClient
+   * Do a get request using the axios client
    */
   public async post(
     url: string,
