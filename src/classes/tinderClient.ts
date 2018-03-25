@@ -26,7 +26,7 @@ class TinderClient {
    * get recommendations
    */
   public async getSuggestions(): Promise<Suggestion[]> {
-    const result = await this.http.doGetRequest('/user/recs');
+    const result = await this.http.get('/user/recs');
     return result.results.map((result) => (new Suggestion(this, result)));
   }
 
@@ -34,7 +34,7 @@ class TinderClient {
    * Get your own meta data (swipes left, people seen, etc..)
    */
   public async getMeta(): Promise<UserMetaData> {
-    const result = await this.http.doGetRequest('/meta');
+    const result = await this.http.get('/meta');
     delete result.status;
     return result;
   }
