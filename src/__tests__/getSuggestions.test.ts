@@ -19,3 +19,21 @@ it('gets recommentations', async () => {
 
   expect(suggestions).toMatchSnapshot();
 });
+
+nock.load('./src/__tests__/mocks/auth.json');
+nock.load('./src/__tests__/mocks/getSuggestions.json');
+nock.load('./src/__tests__/mocks/likeSuggestion.json');
+it('likes a recommentations', async () => {
+  const suggestions = await tinderClient.getSuggestions();
+  const result = await suggestions[0].like();
+  expect(result).toMatchSnapshot();
+});
+
+nock.load('./src/__tests__/mocks/auth.json');
+nock.load('./src/__tests__/mocks/getSuggestions.json');
+nock.load('./src/__tests__/mocks/passSuggestion.json');
+it('passes a recommentations', async () => {
+  const suggestions = await tinderClient.getSuggestions();
+  const result = await suggestions[0].pass();
+  expect(result).toBe(true);
+});

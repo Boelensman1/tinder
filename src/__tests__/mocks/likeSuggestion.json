@@ -1,0 +1,27 @@
+[
+  {
+    "scope": "https://api.gotinder.com:443",
+    "method": "get",
+    "path": "/like/51d4cc502e7211e8a74c61df",
+    "body": "",
+    "status": 200,
+    "response": {
+      "match": true,
+      "likes_remaining": 100
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 23 Mar 2018 08:11:14 GMT",
+      "Vary",
+      "Accept-Encoding",
+      "Vary",
+      "Accept-Encoding",
+      "X-Request-ID",
+      "a0a0aaaaa0a00ojqi0mg",
+      "Connection",
+      "Close"
+    ]
+  }
+]

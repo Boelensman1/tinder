@@ -64,7 +64,7 @@ class Photo {
    */
   public get(): Promise<IncomingMessage> {
     const options = { baseURL: null, responseType: 'stream' };
-    return this.tinderClient.doGetRequest(this.url, options, false);
+    return this.tinderClient.doGetRequest(this.url, false, options);
   }
 }
 

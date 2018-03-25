@@ -1,0 +1,24 @@
+[
+  {
+    "scope": "https://api.gotinder.com",
+    "method": "get",
+    "path": "/pass/51d4cc502e7211e8a74c61df",
+    "body": "",
+    "status": 200,
+    "response": {
+      "status": 200
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 23 Mar 2018 08:11:14 GMT",
+      "X-Request-ID",
+      "a0a0aaaaa0a00ojqi0mg",
+      "Content-Length",
+      "14",
+      "Connection",
+      "Close"
+    ]
+  }
+]

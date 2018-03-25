@@ -75,7 +75,7 @@ class TinderClient {
   /**
    * Do a get request using the axios client
    */
-  public async doGetRequest(url: string, options?: object, checkStatus = true): Promise<any> {
+  public async doGetRequest(url: string, checkStatus = true, options?: object): Promise<any> {
     if (!this.authToken) { throw new Error('Authenticate first!'); }
 
     const result = await this.client.get(url, options);
