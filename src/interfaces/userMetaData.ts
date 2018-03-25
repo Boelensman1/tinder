@@ -1,4 +1,4 @@
-import { User } from '../interfaces';
+import { User, SuperLikes } from '../interfaces';
 
 export interface ClientResources {
   rate_card: { carousel: [{ slug: string }] };
@@ -16,16 +16,7 @@ export interface Group {
 
 export interface Rating {
   likes_remaining: number;
-  super_likes: {
-    remaining: number;
-    alc_remaining: number;
-    new_alc_remaining: number;
-    allotment: number;
-    superlike_refresh_amount: number;
-    superlike_refresh_interval: number;
-    superlike_refresh_interval_unit: string;
-    resets_at?: string;
-  };
+  super_likes: SuperLikes;
 }
 export interface Version {
   active_text: string;

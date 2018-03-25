@@ -171,3 +171,19 @@ Object {
   "likesRemaining": 100,
 }
 `;
+
+exports[`superLikes a recommentations 1`] = `
+Object {
+  "isMatch": false,
+  "superLikes": Object {
+    "alc_remaining": 0,
+    "allotment": 1,
+    "new_alc_remaining": 0,
+    "remaining": 0,
+    "resets_at": "2018-01-01T01:01:01.001Z",
+    "superlike_refresh_amount": 5,
+    "superlike_refresh_interval": 1,
+    "superlike_refresh_interval_unit": "d",
+  },
+}
+`;

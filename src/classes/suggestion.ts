@@ -4,6 +4,7 @@ import {
   School,
   Teaser,
   SpotifyThemeTrack,
+  SuperLikes,
 } from '../interfaces';
 
 import { Photo, TinderClient } from '../classes';
@@ -138,15 +139,12 @@ class Suggestion {
   }
 
   /**
-   * superlike suggestion TODO: figure out the correct path for this
+   * superlike suggestion
    */
-  /*
-  public async superLike(): Promise<boolean> {
-    const match = await this.tinderClient.doGetRequest(`/like/${this.id}/super/`, false);
-    console.log(match);
-    return true;
+  public async superLike(): Promise<{isMatch: boolean; superLikes: SuperLikes}> {
+    const match = await this.tinderClient.doPostRequest(`/like/${this.id}/super`);
+    return { isMatch: match.match, superLikes: match.super_likes };
   }
-   */
 
   /**
    * Pass suggestion

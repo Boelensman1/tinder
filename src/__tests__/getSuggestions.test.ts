@@ -31,6 +31,15 @@ it('likes a recommentations', async () => {
 
 nock.load('./src/__tests__/mocks/auth.json');
 nock.load('./src/__tests__/mocks/getSuggestions.json');
+nock.load('./src/__tests__/mocks/superLikeSuggestion.json');
+it('superLikes a recommentations', async () => {
+  const suggestions = await tinderClient.getSuggestions();
+  const result = await suggestions[0].superLike();
+  expect(result).toMatchSnapshot();
+});
+
+nock.load('./src/__tests__/mocks/auth.json');
+nock.load('./src/__tests__/mocks/getSuggestions.json');
 nock.load('./src/__tests__/mocks/passSuggestion.json');
 it('passes a recommentations', async () => {
   const suggestions = await tinderClient.getSuggestions();

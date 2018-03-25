@@ -1,0 +1,39 @@
+[
+  {
+    "scope": "https://api.gotinder.com:443",
+    "method": "post",
+    "path": "/like/51d4cc502e7211e8a74c61df/super",
+    "body": {},
+    "status": 200,
+    "response": {
+      "match": false,
+      "status": 200,
+      "super_likes": {
+        "remaining": 0,
+        "alc_remaining": 0,
+        "new_alc_remaining": 0,
+        "allotment": 1,
+        "superlike_refresh_amount": 5,
+        "superlike_refresh_interval": 1,
+        "superlike_refresh_interval_unit": "d",
+        "resets_at": "2018-01-01T01:01:01.001Z"
+      }
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 23 Mar 2018 08:11:14 GMT",
+      "X-Request-ID",
+      "a0a0aaaaa0a00ojqi0mg",
+      "Vary",
+      "Accept-Encoding",
+      "Vary",
+      "Accept-Encoding",
+      "Content-Length",
+      "249",
+      "Connection",
+      "Close"
+    ]
+  }
+]
