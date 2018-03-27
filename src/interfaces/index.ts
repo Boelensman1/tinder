@@ -7,3 +7,6 @@ export { SpotifyThemeTrack } from './spotifyThemeTrack';
 export { Interest } from './interest';
 export { UserMetaData } from './userMetaData';
 export { SuperLikes } from './superLikes';
+export { Coordinate } from './coordinate';
+export { CityInfo } from './cityInfo';
+export { CountryInfo } from './countryInfo';

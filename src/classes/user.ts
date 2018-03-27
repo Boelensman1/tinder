@@ -1,23 +1,7 @@
 import { ProfileCore, TinderClient } from '../classes';
+import { CityInfo, CountryInfo } from '../interfaces';
 
-interface Coordinate {
-  lat: number;
-  lon: number;
-}
-
-interface CityInfo {
-  name: string;
-  bounds: {
-    NE: Coordinate;
-    SW: Coordinate;
-  };
-}
-
-interface CountryInfo extends CityInfo {
-  countryCode: string;
-}
-
-const parseCityInfo = (input: any) => ({
+const parseCityInfo = (input: any): CityInfo => ({
   name: input.name,
   bounds: {
     NE: {
@@ -31,7 +15,7 @@ const parseCityInfo = (input: any) => ({
   },
 });
 
-const parseCountryInfo = (input: any) => ({
+const parseCountryInfo = (input: any): CountryInfo => ({
   ...parseCityInfo(input),
   countryCode: input.cc,
 });
