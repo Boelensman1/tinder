@@ -31,6 +31,7 @@ Array [
       Photo {
         "extension": "jpg",
         "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+        "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
         "processedFiles": Array [
           Object {
             "height": 640,
@@ -109,6 +110,7 @@ Array [
       Photo {
         "extension": "jpg",
         "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+        "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
         "processedFiles": Array [
           Object {
             "height": 640,

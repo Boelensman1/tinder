@@ -65,21 +65,33 @@ class User extends ProfileCore {
    */
   squads?: any[]; // TODO: figure out the format of this
   /**
+   * Wether the user can create a squad
+   */
+  canCreateSquads?: boolean;
+  /**
    * Unsure, something ad related I guess
    */
   squadAdsShown?: boolean;
   /**
    * Current position
    */
-  currentPosition: { at: number, lat: number; lon: number };
+  currentPosition?: { at: number, lat: number; lon: number };
   /**
    * Current city
    */
-  currentCity: CityInfo;
+  currentCity?: CityInfo;
   /**
    * Current country
    */
-  currentCountry: CountryInfo;
+  currentCountry?: CountryInfo;
+  /**
+   * Distance in km to search in
+   */
+  maxDistance: number;
+  /**
+   * Wether or not the profile is public
+   */
+  discoverable: boolean;
 
   constructor(tinderClient: TinderClient, input) {
     super(tinderClient, input);
@@ -91,9 +103,16 @@ class User extends ProfileCore {
     this.groups = input.groups;
     this.squads = input.squads;
     this.squadAdsShown = input.squadAdsShown;
-    this.currentPosition = input.pos;
-    this.currentCity = parseCityInfo(input.pos_info.city);
-    this.currentCountry = parseCountryInfo(input.pos_info.country);
+    this.maxDistance = input.distance_filter;
+    this.discoverable = input.discoverable;
+    this.canCreateSquads = input.can_create_squad;
+    if (input.pos) { this.currentPosition = input.pos; }
+    if (input.pos_info && input.pos_info.city) {
+      this.currentCity = parseCityInfo(input.pos_info.city);
+    }
+    if (input.pos_info && input.pos_info.country) {
+      this.currentCountry = parseCountryInfo(input.pos_info.country);
+    }
   }
 }
 

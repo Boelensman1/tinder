@@ -36,6 +36,7 @@ class TinderClient {
   public async getMeta(): Promise<UserMetaData> {
     const result = await this.http.get('/meta');
     delete result.status;
+    result.user = new User(this, result.user);
     return result;
   }
 

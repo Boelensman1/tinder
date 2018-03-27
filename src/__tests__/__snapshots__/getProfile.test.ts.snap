@@ -7,6 +7,7 @@ User {
   "bio": "",
   "birthDate": 2000-01-01T00:00:00.000Z,
   "birthDateInfo": undefined,
+  "canCreateSquads": false,
   "connectionCount": 100,
   "createDate": 2018-03-23T07:11:14.313Z,
   "currentCity": Object {
@@ -41,6 +42,7 @@ User {
     "lat": 51.50143051147461,
     "lon": 5.534973621368408,
   },
+  "discoverable": true,
   "fullName": undefined,
   "groups": undefined,
   "id": "89ca128e81d6468ca16bb5eb",
@@ -48,11 +50,14 @@ User {
   "isFemale": false,
   "isTraveling": undefined,
   "jobs": undefined,
+  "maxDistance": 50,
   "name": "AAA",
   "photos": Array [
     Photo {
       "extension": "jpg",
+      "facebookId": "111111111111111",
       "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+      "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
       "main": true,
       "processedFiles": Array [
         Object {
@@ -136,6 +141,7 @@ Profile {
     Photo {
       "extension": "jpg",
       "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+      "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
       "processedFiles": Array [
         Object {
           "height": 640,

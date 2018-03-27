@@ -10,6 +10,10 @@ class Photo {
    */
   public id: string;
   /**
+   * Facebook id of the photo (only on your own)
+   */
+  public facebookId?: string;
+  /**
    * Url where you can download the photo (you need to authenticate)
    */
   public url: string;
@@ -49,10 +53,12 @@ class Photo {
   public shape?: string;
 
   constructor(private tinderClient: TinderClient, photodata) {
+    this.id = photodata.id;
     this.url = photodata.url;
     this.processedFiles = photodata.processedFiles;
     this.fileName = photodata.fileName;
     this.extension =  photodata.extension;
+    if (photodata.fbId) { this.facebookId = photodata.fbId; }
     if (photodata.main) { this.main = photodata.main; }
     if (photodata.successRate) { this.successRate = photodata.successRate; }
     if (photodata.selectRate) { this.selectRate = photodata.selectRate; }
