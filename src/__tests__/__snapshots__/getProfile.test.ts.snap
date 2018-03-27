@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gets own profile 1`] = `
+User {
+  "apiToken": undefined,
+  "banned": undefined,
+  "bio": "",
+  "birthDate": 2000-01-01T00:00:00.000Z,
+  "birthDateInfo": undefined,
+  "connectionCount": 100,
+  "createDate": 2018-03-23T07:11:14.313Z,
+  "currentCity": Object {
+    "bounds": Object {
+      "NE": Object {
+        "lat": 51.50143051147461,
+        "lon": 5.534973621368408,
+      },
+      "SW": Object {
+        "lat": 51.407936096191406,
+        "lon": 5.358174800872803,
+      },
+    },
+    "name": "Eindhoven",
+  },
+  "currentCountry": Object {
+    "bounds": Object {
+      "NE": Object {
+        "lat": 53.790157318115234,
+        "lon": 7.22690486907959,
+      },
+      "SW": Object {
+        "lat": 50.75082015991211,
+        "lon": 2.25,
+      },
+    },
+    "countryCode": "NL",
+    "name": "Netherlands",
+  },
+  "currentPosition": Object {
+    "at": 1500000000000,
+    "lat": 51.50143051147461,
+    "lon": 5.534973621368408,
+  },
+  "fullName": undefined,
+  "groups": undefined,
+  "id": "89ca128e81d6468ca16bb5eb",
+  "instagram": undefined,
+  "isFemale": false,
+  "isTraveling": undefined,
+  "jobs": undefined,
+  "name": "AAA",
+  "photos": Array [
+    Photo {
+      "extension": "jpg",
+      "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+      "main": true,
+      "processedFiles": Array [
+        Object {
+          "height": 640,
+          "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/640x640_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+          "width": 640,
+        },
+        Object {
+          "height": 320,
+          "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/320x320_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+          "width": 320,
+        },
+        Object {
+          "height": 172,
+          "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/172x172_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+          "width": 172,
+        },
+        Object {
+          "height": 84,
+          "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/84x84_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+          "width": 84,
+        },
+      ],
+      "tinderClient": TinderClient {
+        "http": HttpClient {
+          "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+          "axiosClient": [Function],
+        },
+      },
+      "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+    },
+  ],
+  "pingTime": 2018-03-23T08:11:14.332Z,
+  "schools": Array [
+    Object {
+      "displayed": true,
+      "id": "111111111111111",
+      "name": "School",
+      "type": "College",
+    },
+  ],
+  "spotifyThemeTrack": undefined,
+  "squadAdsShown": undefined,
+  "squads": undefined,
+  "tinderClient": TinderClient {
+    "http": HttpClient {
+      "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+      "axiosClient": [Function],
+    },
+  },
+}
+`;
+
+exports[`gets profile of someone else 1`] = `
+Profile {
+  "bio": "aaaaaaaaaa",
+  "birthDate": 1995-01-01T08:11:14.795Z,
+  "birthDateInfo": "fuzzy birthdate active, not displaying real birth_date",
+  "commonConnections": Array [],
+  "commonInterests": Array [],
+  "connectionCount": undefined,
+  "contentHash": undefined,
+  "distanceMi": 100,
+  "groupMatched": undefined,
+  "id": "5a523847febb740d7088f9ac",
+  "instagram": undefined,
+  "isFemale": true,
+  "isTraveling": undefined,
+  "jobs": Array [
+    Object {
+      "company": Object {
+        "name": "jobname",
+      },
+      "title": Object {
+        "name": "jobtitle",
+      },
+    },
+  ],
+  "name": "Suggestion1",
+  "photos": Array [
+    Photo {
+      "extension": "jpg",
+      "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+      "processedFiles": Array [
+        Object {
+          "height": 640,
+          "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/640x640_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+          "width": 640,
+        },
+        Object {
+          "height": 320,
+          "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/320x320_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+          "width": 320,
+        },
+        Object {
+          "height": 172,
+          "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/172x172_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+          "width": 172,
+        },
+        Object {
+          "height": 84,
+          "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/84x84_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+          "width": 84,
+        },
+      ],
+      "tinderClient": TinderClient {
+        "http": HttpClient {
+          "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+          "axiosClient": [Function],
+        },
+      },
+      "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+    },
+  ],
+  "pingTime": 2014-12-09T00:00:00.000Z,
+  "sNumber": undefined,
+  "schools": Array [],
+  "spotifyThemeTrack": undefined,
+  "teaser": undefined,
+  "teasers": undefined,
+  "tinderClient": TinderClient {
+    "http": HttpClient {
+      "authToken": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+      "axiosClient": [Function],
+    },
+  },
+}
+`;

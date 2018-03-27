@@ -2,7 +2,7 @@
 
 exports[`gets recommentations 1`] = `
 Array [
-  Suggestion {
+  Profile {
     "bio": "aaaaaaaaaa",
     "birthDate": 1995-01-01T08:11:14.795Z,
     "birthDateInfo": "fuzzy birthdate active, not displaying real birth_date",
@@ -83,7 +83,7 @@ Array [
       },
     },
   },
-  Suggestion {
+  Profile {
     "bio": "bbbbbbbbbb",
     "birthDate": 1997-01-01T08:00:00.000Z,
     "birthDateInfo": "fuzzy birthdate active, not displaying real birth_date",

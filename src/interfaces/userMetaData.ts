@@ -1,4 +1,5 @@
-import { User, SuperLikes } from '../interfaces';
+import { SuperLikes } from '../interfaces';
+import { User } from '../classes';
 
 export interface ClientResources {
   rate_card: { carousel: [{ slug: string }] };

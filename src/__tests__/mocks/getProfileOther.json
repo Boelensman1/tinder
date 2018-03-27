@@ -1,0 +1,79 @@
+[
+  {
+    "scope": "https://api.gotinder.com:443",
+    "method": "get",
+    "path": "/user/51d4cc502e7211e8a74c61df",
+    "body": "",
+    "status": 200,
+    "response": {
+      "status": 200,
+      "results": {
+        "common_interests": [],
+        "_id": "5a523847febb740d7088f9ac",
+        "bio": "aaaaaaaaaa",
+        "birth_date": "1995-01-01T08:11:14.795Z",
+        "name": "Suggestion1",
+        "ping_time": "2014-12-09T00:00:00.000Z",
+        "photos": [
+            {
+              "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+              "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+              "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+              "extension": "jpg",
+              "processedFiles": [
+                {
+                  "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/640x640_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+                  "height": 640,
+                  "width": 640
+                },
+                {
+                  "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/320x320_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+                  "height": 320,
+                  "width": 320
+                },
+                {
+                  "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/172x172_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+                  "height": 172,
+                  "width": 172
+                },
+                {
+                  "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/84x84_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+                  "height": 84,
+                  "width": 84
+                }
+              ]
+            }
+          ],
+        "jobs": [
+            {
+              "company": {
+                "name": "jobname"
+              },
+              "title": {
+                "name": "jobtitle"
+              }
+            }
+        ],
+        "schools": [],
+        "gender": 1,
+        "birth_date_info": "fuzzy birthdate active, not displaying real birth_date",
+        "distance_mi": 100,
+        "common_connections": []
+      }
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 23 Mar 2018 08:11:14 GMT",
+      "Vary",
+      "Accept-Encoding",
+      "Vary",
+      "Accept-Encoding",
+      "X-Request-ID",
+      "a0a0aaaaa0a00ojqi0mg",
+      "Connection",
+      "Close"
+    ]
+  }
+]

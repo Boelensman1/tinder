@@ -1,0 +1,123 @@
+[
+  {
+    "scope": "https://api.gotinder.com:443",
+    "method": "get",
+    "path": "/profile",
+    "body": "",
+    "status": 200,
+    "response": {
+      "_id": "89ca128e81d6468ca16bb5eb",
+      "age_filter_max": 32,
+      "age_filter_min": 22,
+      "bio": "",
+      "birth_date": "2000-01-01T00:00:00.000Z",
+      "blend": "optimal",
+      "connection_count": 100,
+      "create_date": "2018-03-23T07:11:14.313Z",
+      "discoverable": true,
+      "distance_filter": 50,
+      "facebook_id": "400000000000000",
+      "gender": 0,
+      "gender_filter": 1,
+      "interested_in": [
+        1
+      ],
+      "interests": [],
+      "name": "AAA",
+      "photos": [
+        {
+          "id": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+          "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+          "fileName": "89ca128e-81d6-468c-a16b-b5ebfb1b06f7",
+          "extension": "jpg",
+          "fbId": "111111111111111",
+          "main": true,
+          "xdistance_percent": 1,
+          "xoffset_percent": 0,
+          "ydistance_percent": 1,
+          "yoffset_percent": 0,
+          "processedFiles": [
+            {
+              "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/640x640_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/320x320_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+              "height": 320,
+              "width": 320
+            },
+            {
+              "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/172x172_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+              "height": 172,
+              "width": 172
+            },
+            {
+              "url": "https://images-ssl.gotinder.com/89ca128e81d6468ca16bb5eb/84x84_89ca128e-81d6-468c-a16b-b5ebfb1b06f7.jpg",
+              "height": 84,
+              "width": 84
+            }
+          ]
+        }
+      ],
+      "ping_time": "2018-03-23T08:11:14.332Z",
+      "pos": {
+        "at": 1500000000000,
+        "lat": 51.50143051147461,
+        "lon": 5.534973621368408
+      },
+      "pos_info": {
+        "city": {
+          "name": "Eindhoven",
+          "bounds": {
+            "ne": {
+              "lat": 51.50143051147461,
+              "lng": 5.534973621368408
+            },
+            "sw": {
+              "lat": 51.407936096191406,
+              "lng": 5.358174800872803
+            }
+          }
+        },
+        "country": {
+          "name": "Netherlands",
+          "cc": "NL",
+          "bounds": {
+            "ne": {
+              "lat": 53.790157318115234,
+              "lng": 7.22690486907959
+            },
+            "sw": {
+              "lat": 50.75082015991211,
+              "lng": 2.25
+            }
+          }
+        }
+      },
+      "schools": [
+          {
+            "displayed": true,
+            "id": "111111111111111",
+            "name": "School",
+            "type": "College"
+          }
+      ],
+      "can_create_squad": false
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Fri, 23 Mar 2018 08:11:14 GMT",
+      "Vary",
+      "Accept-Encoding",
+      "Vary",
+      "Accept-Encoding",
+      "X-Request-ID",
+      "a0a0aaaaa0a00ojqi0mg",
+      "Connection",
+      "Close"
+    ]
+  }
+]
