@@ -1,5 +1,4 @@
 import {
-  Instagram,
   Job,
   School,
   Teaser,
