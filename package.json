@@ -11,7 +11,8 @@
     "test:watch": "jest --watch",
     "lint": "tslint './src/**/*.ts' --project tsconfig.json",
     "clean": "rimraf lib && rimraf docs",
-    "prepare": "npm run lint && npm run clean && npm run compile && npm run compile:docs"
+    "prepare": "npm run lint && npm run clean && npm run compile && npm run compile:docs",
+    "updateDocs": "npm run compile:docs && git checkout gh-pages && git add ./docs && git commit -m 'Update docs.' && git push && git checkout master"
   },
   "repository": {
     "type": "git",
