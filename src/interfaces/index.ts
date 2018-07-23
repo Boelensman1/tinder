@@ -1,4 +1,3 @@
-export { InstaPhoto } from './instaPhoto';
 export { Job } from './job';
 export { School } from './school';
 export { Teaser } from './teaser';

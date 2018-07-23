@@ -1,0 +1,98 @@
+[
+  {
+    "scope": "https://api.gotinder.com:443",
+    "method": "get",
+    "path": "/user/ea416ed0759d46a8de58f63a59077499",
+    "body": "",
+    "status": 200,
+    "response": {
+      "status": 200,
+      "results": {
+        "connection_count": 0,
+        "common_interests": [],
+        "_id": "ea416ed0759d46a8de58f63a59077499",
+        "birth_date": "1990-01-01T10:10:10.010Z",
+        "name": "InstaTest",
+        "ping_time": "2014-12-09T00:00:00.000Z",
+        "photos": [
+          {
+            "id": "a0a00000-0000-0a00-bf00-00000aaa0000",
+            "url": "https://images-ssl.gotinder.com/ea416ed0759d46a8de58f63a59077499/1080x1080_a0a00000-0000-0a00-aa00-00000aaa0000.jpg",
+            "fileName": "a0a00000-0000-0a00-aa00-00000aaa0000.jpg",
+            "extension": "jpg",
+            "main": true,
+            "processedFiles": [
+              {
+                "url": "https://images-ssl.gotinder.com/ea416ed0759d46a8de58f63a59077499/640x640_a0a00000-0000-0a00-aa00-00000aaa0000.jpg",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://images-ssl.gotinder.com/ea416ed0759d46a8de58f63a59077499/320x320_a0a00000-0000-0a00-aa00-00000aaa0000.jpg",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://images-ssl.gotinder.com/ea416ed0759d46a8de58f63a59077499/172x172_a0a00000-0000-0a00-aa00-00000aaa0000.jpg",
+                "height": 172,
+                "width": 172
+              },
+              {
+                "url": "https://images-ssl.gotinder.com/ea416ed0759d46a8de58f63a59077499/84x84_a0a00000-0000-0a00-aa00-00000aaa0000.jpg",
+                "height": 84,
+                "width": 84
+              }
+            ],
+            "avatar": {
+              "tinder": {
+                "xdistance_percent": 0.10000000000000000,
+                "xoffset_percent": 0.10000000000000000,
+                "ydistance_percent": 0.10000000000000000,
+                "yoffset_percent": 0.10000000000000000
+              }
+            }
+          }
+        ],
+        "instagram": {
+          "completed_initial_fetch": true,
+          "last_fetch_time": "2018-01-01T10:01:01.010Z",
+          "media_count": 2,
+          "photos": [
+            {
+              "image": "https://scontent.cdninstagram.com/vp/a",
+              "thumbnail": "https://scontent.cdninstagram.com/vp/b",
+              "ts": "1500000000",
+              "link": "https://www.instagram.com/p/AaAA0AaA00A/"
+            },
+            {
+              "image": "https://scontent.cdninstagram.com/vp/c",
+              "thumbnail": "https://scontent.cdninstagram.com/vp/e",
+              "ts": "1500000001",
+              "link": "https://www.instagram.com/p/AaAaaAAAAaA/"
+            }
+          ],
+          "profile_picture": "https://scontent.cdninstagram.com/vp/d.jpg",
+          "username": "aaaa"
+        },
+        "gender": 1,
+        "birth_date_info": "fuzzy birthdate active, not displaying real birth_date",
+        "distance_mi": 10,
+        "jobs": [],
+        "schools": [],
+        "common_connections": []
+      }
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Date",
+      "Mon, 23 Jul 2018 10:10:10 GMT",
+      "Vary",
+      "Accept-Encoding",
+      "Vary",
+      "Accept-Encoding",
+      "Connection",
+      "Close"
+    ]
+  }
+]

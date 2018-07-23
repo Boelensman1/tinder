@@ -1,0 +1,30 @@
+[
+  {
+    "scope": "https://www.instagram.com:443",
+    "method": "get",
+    "path": "/aaaa/",
+    "body": "",
+    "status": 200,
+    "response": "<!DOCTYPE html>\",\"is_private\":false,\"</body>\n</html>",
+    "rawHeaders": [
+      "Content-Type",
+      "text/html",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "Cache-Control",
+      "private, no-cache, no-store, must-revalidate",
+      "Pragma",
+      "no-cache",
+      "Expires",
+      "Sat, 01 Jan 2000 00:00:00 GMT",
+      "Vary",
+      "Cookie, Accept-Language, Accept-Encoding",
+      "Content-Language",
+      "en",
+      "Strict-Transport-Security",
+      "max-age=60",
+      "Connection",
+      "close"
+    ]
+  }
+]

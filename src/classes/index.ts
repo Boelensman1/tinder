@@ -5,3 +5,4 @@ export { Photo } from './photo';
 export { HttpClient } from './httpClient';
 export { User } from './user';
 export { Instagram } from './instagram';
+export { InstagramPhoto } from './instagramPhoto';
