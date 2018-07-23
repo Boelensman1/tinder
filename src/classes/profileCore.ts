@@ -1,5 +1,4 @@
 import {
-  Instagram,
   Job,
   School,
   Teaser,
@@ -7,7 +6,7 @@ import {
   SuperLikes,
 } from '../interfaces';
 
-import { Photo, TinderClient } from '../classes';
+import { Photo, TinderClient, Instagram } from '../classes';
 
 /**
  * Superclass for profile & user
@@ -84,7 +83,7 @@ class ProfileCore {
     this.schools = input.schools;
     this.isFemale = input.gender === 1;
     this.birthDateInfo = input.birth_date_info;
-    this.instagram = input.instagram;
+    if (input.instagram) { this.instagram = new Instagram(input.instagram); }
     this.spotifyThemeTrack = input.spotify_theme_track;
     this.isTraveling = input.is_traveling;
   }

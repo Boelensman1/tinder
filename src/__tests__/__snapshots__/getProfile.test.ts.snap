@@ -46,7 +46,6 @@ User {
   "fullName": undefined,
   "groups": undefined,
   "id": "89ca128e81d6468ca16bb5eb",
-  "instagram": undefined,
   "isFemale": false,
   "isTraveling": undefined,
   "jobs": undefined,
@@ -123,7 +122,6 @@ Profile {
   "distanceMi": 100,
   "groupMatched": undefined,
   "id": "5a523847febb740d7088f9ac",
-  "instagram": undefined,
   "isFemale": true,
   "isTraveling": undefined,
   "jobs": Array [
