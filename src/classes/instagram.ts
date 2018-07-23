@@ -53,7 +53,7 @@ class Instagram {
    * Check if a profile is public
    */
   public isPublic(): Promise<boolean> {
-    const url = `https://www.instagram.com/${this.username}/`
+    const url = `https://www.instagram.com/${this.username}/`;
     return axios.get(url).then((r) => (r.data)).then((data) => {
       const match = /","is_private":(.{4,5}),"/g.exec(data);
       if (match === null) {
