@@ -1,5 +1,10 @@
-import { Profile, User, Photo, HttpClient } from '../classes';
-import { UserMetaData } from '../interfaces';
+import {
+  Profile,
+  User,
+  Photo,
+  HttpClient,
+  UserMetaData,
+} from '../classes';
 
 /**
  * The main class containing all the functions
@@ -35,9 +40,7 @@ class TinderClient {
    */
   public async getMeta(): Promise<UserMetaData> {
     const result = await this.http.get('/meta');
-    delete result.status;
-    result.user = new User(this, result.user);
-    return result;
+    return new UserMetaData(this, result);
   }
 
   /**

@@ -1,9 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`gets meta information 1`] = `
-Object {
-  "account": Object {},
-  "client_resources": Object {
+UserMetaData {
+  "clientResources": Object {
     "plus_screen": Array [
       "unlimited_swipes",
       "who_you_see",
@@ -230,20 +229,20 @@ Object {
   },
   "purchases": Array [],
   "rating": Object {
-    "likes_remaining": 100,
-    "super_likes": Object {
-      "alc_remaining": 0,
+    "likesRemaining": 100,
+    "superLikes": Object {
+      "alcRemaining": 0,
       "allotment": 1,
-      "new_alc_remaining": 0,
+      "newAlcRemaining": 0,
       "remaining": 1,
-      "resets_at": null,
-      "superlike_refresh_amount": 5,
-      "superlike_refresh_interval": 1,
-      "superlike_refresh_interval_unit": "d",
+      "resetsAt": null,
+      "superlikeRefreshAmount": 5,
+      "superlikeRefreshInterval": 1,
+      "superlikeRefreshIntervalUnit": "d",
     },
   },
   "travel": Object {
-    "is_traveling": false,
+    "isTraveling": false,
   },
   "tutorials": Array [
     "super_like_action",
@@ -337,11 +336,11 @@ Object {
     },
   },
   "versions": Object {
-    "active_text": "0.0.0",
-    "age_filter": "2.1.0",
+    "activeText": "0.0.0",
+    "ageFilter": "2.1.0",
     "matchmaker": "2.1.0",
     "trending": "10.0.0",
-    "trending_active_text": "10.0.0",
+    "trendingActiveText": "10.0.0",
   },
 }
 `;

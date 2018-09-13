@@ -6,3 +6,4 @@ export { HttpClient } from './httpClient';
 export { User } from './user';
 export { Instagram } from './instagram';
 export { InstagramPhoto } from './instagramPhoto';
+export { UserMetaData } from './userMetaData';

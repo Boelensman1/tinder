@@ -6,7 +6,11 @@ import {
   SuperLikes,
 } from '../interfaces';
 
-import { Photo, TinderClient, ProfileCore } from '../classes';
+import {
+  Photo,
+  TinderClient,
+  ProfileCore,
+} from '../classes';
 
 /**
  * The profiles that tinder gives you (the ones you'd swipe on in the app)

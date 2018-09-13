@@ -3,7 +3,6 @@ import {
   School,
   Teaser,
   SpotifyThemeTrack,
-  SuperLikes,
 } from '../interfaces';
 
 import { Photo, TinderClient, Instagram } from '../classes';
