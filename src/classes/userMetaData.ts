@@ -27,53 +27,110 @@ export interface Version {
   trendingActiveText: string;
 }
 
-export interface Global {
-  boost_intro_multiplier: number;
-  invite_type: string;
-  recs_interval: number;
-  updates_interval: number;
-  recs_size: number;
-  matchmaker_default_message: string;
-  share_default_text: string;
-  boost_decay: number;
-  boost_up: number;
-  boost_down: number;
+/* tslint:disable:completed-docs */
+// TODO: add documentation for this class
+export class Globals {
+  boostIntroMultiplier: number;
+  inviteType: string;
+  recsInterval: number;
+  updatesInterval: number;
+  recsSize: number;
+  matchmakerDefaultMessage: string;
+  shareDefaultText: string;
+  boostDecay: number;
+  boostUp: number;
+  boostDown: number;
   sparks: boolean;
   kontagent: boolean;
-  sparks_enabled: boolean;
-  kontagent_enabled: boolean;
+  sparksEnabled: boolean;
+  kontagentEnabled: boolean;
   mqtt: boolean;
-  tinder_sparks: boolean;
-  ad_swipe_interval: number;
-  fetch_connections: boolean;
-  rate_app: boolean;
-  app_boy: boolean;
-  super_like_alc_mode: number;
+  tinderSparks: boolean;
+  adSwipeInterval: number;
+  fetchConnections: boolean;
+  rateApp: boolean;
+  appBoy: boolean;
+  superLikeAlcMode: number;
   plus: boolean;
-  super_like: boolean;
-  recs_blend: boolean;
+  superLike: boolean;
+  recsBlend: boolean;
   fireboarding: boolean;
-  squads_enabled: boolean;
-  squads_extension_length: number;
-  squads_expiration_notice: number;
-  photo_preview_enabled: boolean;
+  squadsEnabled: boolean;
+  squadsExtensionLength: number;
+  squadsExpirationNotice: number;
+  photoPreviewEnabled: boolean;
   discount: boolean;
   boost: boolean;
-  boost_duration: number;
-  fast_match: boolean;
-  fast_match_preview_minimum_time: number;
-  fast_match_notif_options: number[];
-  fast_match_notif_default: number;
-  fast_match_new_count_fetch_interval: number;
-  fast_match_boost_new_count_fetch_interval: number;
-  fast_match_new_count_threshold: number;
-  fast_match_polling_mode: number;
-  can_edit_jobs: boolean;
-  can_edit_schools: boolean;
-  can_add_photos_from_facebook: boolean;
-  can_show_common_connections: boolean;
-  web_payments_enabled: boolean;
-  card_replay: boolean;
+  boostDuration: number;
+  fastMatch: boolean;
+  fastMatchPreviewMinimumTime: number;
+  fastMatchNotifOptions: number[];
+  fastMatchNotifDefault: number;
+  fastMatchNewCountFetchInterval: number;
+  fastMatchBoostNewCountFetchInterval: number;
+  fastMatchNewCountThreshold: number;
+  fastMatchPollingMode: number;
+  canEditJobs: boolean;
+  canEditSchools: boolean;
+  canAddPhotosFromFacebook: boolean;
+  canShowCommonConnections: boolean;
+  webPaymentsEnabled: boolean;
+  cardReplay: boolean;
+  /* tslint:enable */
+
+
+  constructor(input) {
+    this.boostIntroMultiplier = input.boost_intro_multiplier;
+    this.inviteType = input.invite_type;
+    this.recsInterval = input.recs_interval;
+    this.updatesInterval = input.updates_interval;
+    this.recsSize = input.recs_size;
+    this.matchmakerDefaultMessage = input.matchmaker_default_message;
+    this.shareDefaultText = input.share_default_text;
+    this.boostDecay = input.boost_decay;
+    this.boostUp = input.boost_up;
+    this.boostDown = input.boost_down;
+    this.sparks = input.sparks;
+    this.kontagent = input.kontagent;
+    this.sparksEnabled = input.sparks_enabled;
+    this.kontagentEnabled = input.kontagent_enabled;
+    this.mqtt = input.mqtt;
+    this.tinderSparks = input.tinder_sparks;
+    this.adSwipeInterval = input.ad_swipe_interval;
+    this.fetchConnections = input.fetch_connections;
+    this.rateApp = input.rate_app;
+    this.appBoy = input.app_boy;
+    this.superLikeAlcMode = input.super_like_alc_mode;
+    this.plus = input.plus;
+    this.superLike = input.super_like;
+    this.recsBlend = input.recs_blend;
+    this.fireboarding = input.fireboarding;
+    this.squadsEnabled = input.squads_enabled;
+    this.squadsExtensionLength = input.squads_extension_length;
+    this.squadsExpirationNotice = input.squads_expiration_notice;
+    this.photoPreviewEnabled = input.photo_preview_enabled;
+    this.discount = input.discount;
+    this.boost = input.boost;
+    this.boostDuration = input.boost_duration;
+    this.fastMatch = input.fast_match;
+    this.fastMatchPreviewMinimumTime = input.fast_match_preview_minimum_time;
+    this.fastMatchNotifOptions = input.fast_match_notif_options;
+    this.fastMatchNotifDefault = input.fast_match_notif_default;
+
+    this.fastMatchNewCountFetchInterval = input.
+      fast_match_new_count_fetch_interval;
+    this.fastMatchBoostNewCountFetchInterval = input.
+      fast_match_boost_new_count_fetch_interval;
+
+    this.fastMatchNewCountThreshold = input.fast_match_new_count_threshold;
+    this.fastMatchPollingMode = input.fast_match_polling_mode;
+    this.canEditJobs = input.can_edit_jobs;
+    this.canEditSchools = input.can_edit_schools;
+    this.canAddPhotosFromFacebook = input.can_add_photos_from_facebook;
+    this.canShowCommonConnections = input.can_show_common_connections;
+    this.webPaymentsEnabled = input.web_payments_enabled;
+    this.cardReplay = input.card_replay;
+  }
 }
 
 export interface Sku {
@@ -138,7 +195,7 @@ class UserMetaData {
   /**
    * Tinder settings
    */
-  globals: Global;
+  globals: Globals;
   /**
    * Either tutorials done or tutorials availabe
    * TODO: figure out which one it is
@@ -181,7 +238,7 @@ class UserMetaData {
       trending: input.versions.trending,
       trendingActiveText: input.versions.trending_active_text,
     };
-    this.globals = input.globals;
+    this.globals = new Globals(input.globals);
     this.tutorials = input.tutorials;
     this.products = input.products;
     this.user = new User(tinderClient, input.user);
