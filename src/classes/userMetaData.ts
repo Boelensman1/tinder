@@ -28,7 +28,7 @@ export interface Version {
 }
 
 /* tslint:disable:completed-docs */
-// TODO: add documentation for this class
+// TODO: add documentation for these classes
 export class Globals {
   boostIntroMultiplier: number;
   inviteType: string;
@@ -76,7 +76,6 @@ export class Globals {
   canShowCommonConnections: boolean;
   webPaymentsEnabled: boolean;
   cardReplay: boolean;
-  /* tslint:enable */
 
 
   constructor(input) {
@@ -133,28 +132,37 @@ export class Globals {
   }
 }
 
-export interface Sku {
-  product_type: string;
-  purchase_type: string;
-  product_id: string;
+export class Sku {
+  productType: string;
+  purchaseType: string;
+  productId: string;
   amount: number;
-  is_base_group: boolean;
+  isBaseGroup: boolean;
+
+  constructor(input) {
+    this.productType = input.product_type;
+    this.purchaseType = input.purchase_type;
+    this.productId = input.product_id;
+    this.amount = input.amount;
+    this.isBaseGroup = input.is_base_group;
+  }
 }
 
-export interface Products {
-  superlike: {
-    regular: { skus: Sku[] };
-  };
-  boost: {
-    regular: { skus: Sku[] };
-  };
-  plus: {
-    regular: { skus: Sku[] };
-  };
-  gold: {
-    regular: { skus: Sku[] };
-  };
+export class Products {
+  superLike: Sku[];
+  boost: Sku[];
+  plus: Sku[];
+  gold: Sku[];
+
+  constructor(input) {
+    this.superLike = input.superlike.regular.skus.map((sku) => (new Sku(sku)));
+    this.boost = input.boost.regular.skus.map((sku) => (new Sku(sku)));
+    this.plus = input.plus.regular.skus.map((sku) => (new Sku(sku)));
+    this.gold = input.gold.regular.skus.map((sku) => (new Sku(sku)));
+  }
 }
+
+/* tslint:enable */
 
 export interface Travel {
   isTraveling: boolean;
@@ -240,7 +248,7 @@ class UserMetaData {
     };
     this.globals = new Globals(input.globals);
     this.tutorials = input.tutorials;
-    this.products = input.products;
+    this.products = new Products(input.products);
     this.user = new User(tinderClient, input.user);
   }
 }

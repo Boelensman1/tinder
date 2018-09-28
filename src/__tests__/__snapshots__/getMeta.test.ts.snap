@@ -121,111 +121,99 @@ UserMetaData {
     },
   ],
   "notifications": Array [],
-  "products": Object {
-    "boost": Object {
-      "regular": Object {
-        "skus": Array [
-          Object {
-            "amount": 10,
-            "product_id": "boost_consumable_2499_10",
-            "product_type": "boost",
-            "purchase_type": "consumable",
-          },
-          Object {
-            "amount": 5,
-            "is_primary": true,
-            "product_id": "boost_consumable_1499_5",
-            "product_type": "boost",
-            "purchase_type": "consumable",
-          },
-          Object {
-            "amount": 1,
-            "is_base_group": true,
-            "product_id": "boost_consumable_399_1",
-            "product_type": "boost",
-            "purchase_type": "consumable",
-          },
-        ],
+  "products": Products {
+    "boost": Array [
+      Sku {
+        "amount": 10,
+        "isBaseGroup": undefined,
+        "productId": "boost_consumable_2499_10",
+        "productType": "boost",
+        "purchaseType": "consumable",
       },
-    },
-    "gold": Object {
-      "regular": Object {
-        "skus": Array [
-          Object {
-            "product_id": "gold_subscription_1499_12m_1v",
-            "product_type": "gold",
-            "purchase_type": "subscription",
-            "terms": 12,
-          },
-          Object {
-            "is_primary": true,
-            "product_id": "gold_subscription_1499_6m_1v",
-            "product_type": "gold",
-            "purchase_type": "subscription",
-            "terms": 6,
-          },
-          Object {
-            "is_base_group": true,
-            "product_id": "gold_subscription_1499_1m_1v",
-            "product_type": "gold",
-            "purchase_type": "subscription",
-            "terms": 1,
-          },
-        ],
+      Sku {
+        "amount": 5,
+        "isBaseGroup": undefined,
+        "productId": "boost_consumable_1499_5",
+        "productType": "boost",
+        "purchaseType": "consumable",
       },
-    },
-    "plus": Object {
-      "regular": Object {
-        "skus": Array [
-          Object {
-            "product_id": "plus_subscription_1499_12m_1v",
-            "product_type": "plus",
-            "purchase_type": "subscription",
-            "terms": 12,
-          },
-          Object {
-            "is_primary": true,
-            "product_id": "plus_subscription_1499_6m_1v",
-            "product_type": "plus",
-            "purchase_type": "subscription",
-            "terms": 6,
-          },
-          Object {
-            "is_base_group": true,
-            "product_id": "plus_subscription_1499_1m_1v",
-            "product_type": "plus",
-            "purchase_type": "subscription",
-            "terms": 1,
-          },
-        ],
+      Sku {
+        "amount": 1,
+        "isBaseGroup": true,
+        "productId": "boost_consumable_399_1",
+        "productType": "boost",
+        "purchaseType": "consumable",
       },
-    },
-    "superlike": Object {
-      "regular": Object {
-        "skus": Array [
-          Object {
-            "amount": 5,
-            "is_base_group": true,
-            "product_id": "superlike_consumable_499_5",
-            "product_type": "superlike",
-            "purchase_type": "consumable",
-          },
-          Object {
-            "amount": 25,
-            "is_primary": true,
-            "product_id": "superlike_consumable_1999_25",
-            "product_type": "superlike",
-            "purchase_type": "consumable",
-          },
-          Object {
-            "amount": 60,
-            "product_id": "superlike_consumable_3999_60",
-            "product_type": "superlike",
-            "purchase_type": "consumable",
-          },
-        ],
+    ],
+    "gold": Array [
+      Sku {
+        "amount": undefined,
+        "isBaseGroup": undefined,
+        "productId": "gold_subscription_1499_12m_1v",
+        "productType": "gold",
+        "purchaseType": "subscription",
       },
-    },
+      Sku {
+        "amount": undefined,
+        "isBaseGroup": undefined,
+        "productId": "gold_subscription_1499_6m_1v",
+        "productType": "gold",
+        "purchaseType": "subscription",
+      },
+      Sku {
+        "amount": undefined,
+        "isBaseGroup": true,
+        "productId": "gold_subscription_1499_1m_1v",
+        "productType": "gold",
+        "purchaseType": "subscription",
+      },
+    ],
+    "plus": Array [
+      Sku {
+        "amount": undefined,
+        "isBaseGroup": undefined,
+        "productId": "plus_subscription_1499_12m_1v",
+        "productType": "plus",
+        "purchaseType": "subscription",
+      },
+      Sku {
+        "amount": undefined,
+        "isBaseGroup": undefined,
+        "productId": "plus_subscription_1499_6m_1v",
+        "productType": "plus",
+        "purchaseType": "subscription",
+      },
+      Sku {
+        "amount": undefined,
+        "isBaseGroup": true,
+        "productId": "plus_subscription_1499_1m_1v",
+        "productType": "plus",
+        "purchaseType": "subscription",
+      },
+    ],
+    "superLike": Array [
+      Sku {
+        "amount": 5,
+        "isBaseGroup": true,
+        "productId": "superlike_consumable_499_5",
+        "productType": "superlike",
+        "purchaseType": "consumable",
+      },
+      Sku {
+        "amount": 25,
+        "isBaseGroup": undefined,
+        "productId": "superlike_consumable_1999_25",
+        "productType": "superlike",
+        "purchaseType": "consumable",
+      },
+      Sku {
+        "amount": 60,
+        "isBaseGroup": undefined,
+        "productId": "superlike_consumable_3999_60",
+        "productType": "superlike",
+        "purchaseType": "consumable",
+      },
+    ],
   },
   "purchases": Array [],
   "rating": Object {
